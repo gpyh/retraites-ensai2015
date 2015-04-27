@@ -1,0 +1,32 @@
+Package: retraites
+Type: Package
+Title: Prévisions des départs en retraite des fonctionnaires de l'Etat
+Version: 0.1
+Date: 2015-04-23
+Authors@R: c(
+    person("Floriane", "Du Plessis De Grenedan", role="aut", email = "floriane.du-plessis-de-grenedan@eleve.ensai.fr"),
+    person("Yacine", "Hmito", role=c("aut","cre"), email = "yacine.hmito@eleve.ensai.fr"),
+    person("Xiao", "Shi", role="aut", email = "xiao.shi@eleve.ensai.fr")
+    )
+Description: Fonctions utilitaires pour le projet de statistique de deuxième année de l'Ensai (année 2015) portant sur la prévision des départs en retraite des fonctionnaires de l'Etat à l'aide de variables d'incitation financière. Groupe composé de Florian Du Plessis De Grenedan, Yacine Hmito et Xiao Shi sous la supervision de Benoit Buisson et Pauline Le Meil de la DGFiP.
+License: TBD
+LazyData: TRUE
+Imports: readr,
+    foreach,
+    Rcpp (>= 0.11.5)
+Depends:ggplot2,
+    gridExtra,
+    reshape2,
+    data.table,
+    magrittr,
+    eha,
+    geepack,
+    MuMIn,
+    lubridate,
+    splitstackshape,
+    pander,
+    FactoMineR,
+    texreg,
+    candy
+VignetteBuilder: knitr
+Suggests: testthat
